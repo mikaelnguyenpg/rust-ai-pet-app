@@ -1,0 +1,13 @@
+[package]
+name = "ai-engine"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+tract-onnx = "0.21" # Thư viện chạy file ONNX
+image = "0.24"      # Xử lý ảnh
+getrandom = { version = "0.2", features = ["js"] }
